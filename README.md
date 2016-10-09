@@ -4,7 +4,7 @@ A RPC library for the Go programming language that operates over AMQP.
 
 ## Status
 
-Beta. Server and Client API may change a bit.
+Beta... Server and Client API may change a bit.
 
 ## Goal
 
