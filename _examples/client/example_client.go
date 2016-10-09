@@ -23,7 +23,7 @@ func main() {
 	userService, err := client.NewClient(broker, "UserService", 1000)
 
 	if err != nil {
-		fmt.Printf("Error creating client")
+		fmt.Printf("Error creating client!")
 		panic(err)
 	}
 
@@ -35,7 +35,7 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	// call a lot of methods concurrently
+	// calling a lot of methods concurrently
 	for i := 0; i < 1000; i++ {
 		wg.Add(1)
 		go func(idx int) {
