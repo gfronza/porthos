@@ -23,7 +23,7 @@ func main() {
 	userService, err := client.NewClient(broker, "UserService", 1000)
 
 	if err != nil {
-		fmt.Printf("Error creating client!")
+		fmt.Printf("Error creating client")
 		panic(err)
 	}
 
