@@ -40,7 +40,7 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	// call a lot of methods concurrently
+	// calling a lot of methods concurrently
 	for i := 0; i < 1000; i++ {
 		wg.Add(1)
 		go func(idx int) {
